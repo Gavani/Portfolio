@@ -1,0 +1,104 @@
+/*===================== Roboto fonts =====================*/
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('./assets/fonts/sroboto-bold-webfont.woff2') format('woff2'),
+         url('./assets/fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoitalic';
+    src: url('./assets/fonts/roboto-italic-webfont.woff2') format('woff2'),
+         url('./assets/fonts/roboto-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('./assets/fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('./assets/fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('./assets/fonts/roboto-medium-webfont.woff2') format('woff2'),
+         url('./assets/fonts/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('./assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('./assets/fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@mixin roboto($style: regular){
+    @if $style == regular  {
+        font-family: 'robotoregular', Arial, Helvetica, sans-serif;
+    }
+    @if $style == medium {
+        font-family: 'robotomedium', Arial, Helvetica, sans-serif;
+    }
+    @if $style == light {
+        font-family: 'robotolight', Arial, Helvetica, sans-serif;
+    }
+    @if $style == italic {
+        font-family: 'robotoitalic', Arial, Helvetica, sans-serif;
+    }
+    @if $style == bold {
+        font-family: 'robotobold', Arial, Helvetica, sans-serif;
+    }
+}
+
+
+/*===================== Bernier font =====================*/
+@font-face {
+    font-family: 'bernier_distressedregular';
+    src: url('./assets/fonts/bernierdistressed-regular-webfont.woff2') format('woff2'),
+         url('./assets/fonts/bernierdistressed-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bernier_regularregular';
+    src: url('./assets/fonts/bernierregular-regular-webfont.woff2') format('woff2'),
+         url('./assets/fonts/bernierregular-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bernier_shaderegular';
+    src: url('./assets/fonts/berniershade-regular-webfont.woff2') format('woff2'),
+         url('./assets/fonts/berniershade-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@mixin bernie($style : regular){
+    @if $style == regular {
+        font-family: 'bernier_regularregular', Arial, Helvetica, sans-serif;
+    }
+    @if $style == distressed {
+        font-family: 'bernier_distressedregular', Arial, Helvetica, sans-serif;
+    }
+    @if $style == sahde{
+        font-family: 'bernier_shaderegular', Arial, Helvetica, sans-serif;
+    }
+}
