@@ -1,7 +1,21 @@
+//colors
+$green      : #00bfa5;
+$green-dar  : #009688;
+$gray-green : #455a64;
+$gray       : #d6d6d6;
+$black      : #373e42;
+$red        : #e44845;
+$beige      : #eeebdf;
+$white      : #efeee9;
+$blue       : #6da3bd;
+
+//font-size
+$title-fs       :   63px;
+$subtitle-fs    :   35px;
 
 //layout setups
-@import 'layout/setups';
 @import 'layout/fonts';
+@import 'layout/setups';
 
 //mixins
 @import 'helpers/mixins';

@@ -2,7 +2,7 @@ html, body{
     height: 100%;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    @include roboto;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     line-height: 1.42
