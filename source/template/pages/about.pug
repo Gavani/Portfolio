@@ -4,5 +4,22 @@ block title
         | About page
 
 block content
-        section.hero
-            | Hello this is a test
+        section.hero.section
+                .hero__bg
+                        img(src="", alt="background").hero__bg-img
+                header.hero__header
+                        ul.socials
+                                each item in ['vk', 'github', 'in']
+                                        li.socials__item
+                                                a(href="" class=`socials__link`)
+                                                        svg(class=`socials__svg socials__svg_${item}`)
+                                                                use(xlink:href=`/assets/img/icons/symbol/sprite.svg#${item}`)
+                        a(href="").hamburger
+                                svg.hamburger__svg
+                                        use(xlink:href=`/assets/img/icons/symbol/sprite.svg#hamburger`)
+                .hero__title
+                        +section__title('section__title-about section__title-about_dims', 'about_header')
+                                                        
+        section.section.about
+        section.section.map
+
