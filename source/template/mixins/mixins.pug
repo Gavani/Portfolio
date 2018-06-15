@@ -1,3 +1,9 @@
 mixin section__title (additionClass, id)
     svg(class=`section__title ${additionClass}`)
         use(xlink:href=`/assets/img/icons/symbol/sprite.svg#${id}`)
+
+mixin title (additionClass, id, title)
+    .title(class=`${additionClass}`)= title
+        svg(class="title__svg")
+            use(xlink:href=`/assets/img/icons/symbol/sprite.svg#${id}`)
+            
