@@ -3,7 +3,8 @@ mixin section__title (additionClass, id)
         use(xlink:href=`/assets/img/icons/symbol/sprite.svg#${id}`)
 
 mixin title (additionClass, id, title)
-    .title(class=`${additionClass}`)= title
+    .title(class=`${additionClass}`)
+        p= title
         svg(class="title__svg")
             use(xlink:href=`/assets/img/icons/symbol/sprite.svg#${id}`)
             

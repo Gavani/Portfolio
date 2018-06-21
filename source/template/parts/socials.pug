@@ -1,0 +1,27 @@
+mixin socials (additionClass)
+  -
+    var links =[
+      {
+        name: "vk",
+        href: "https://vk.com/feed"
+      },
+      {
+        name: "fb",
+        href: "https://www.facebook.com/"
+      },
+      {
+        name: "github",
+        href: "https://github.com/Gavani"
+      },
+      {
+        name: "in",
+        href: "https://www.linkedin.com/"
+      }
+    ]
+  
+  ul(class=`socials__list socials__${additionClass}`)
+    each item in links
+      li.socials__item
+        a.socials__item-link(href=`${item.href}` target="_blank")
+          svg(class=`socials__icon socials__icon--${item.name}`)
+            use(xlink:href=`/assets/img/icons/symbol/sprite.svg#${item.name}`)

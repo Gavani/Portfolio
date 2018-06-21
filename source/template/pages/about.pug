@@ -1,13 +1,14 @@
 extends ../main-layout
 
+block variables
+  -
+    var title = "About page";
+    var page  = "About"
 
-block title
-        | About page
 
 block content
-  section.hero.section.section__hero-about
-    include ../parts/hero
-
+  include ../parts/hero
+  +hero('about')
   main(role="main").page-main
     section.section.about
       .about__left
