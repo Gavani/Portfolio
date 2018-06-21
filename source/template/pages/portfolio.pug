@@ -1,0 +1,41 @@
+extends ../main-layout
+
+block variables
+  -
+    var title = "Portfolio page";
+    var page  = "Portfolio"
+
+block content
+    include ../parts/hero
+    +hero('portfolio')
+    main(role="main").page-main
+      section.section.works
+        +title('portfolio__title', 'works_header', 'Мои Роботы')
+      section.section.slider
+        .slider__col.slider__col-left
+          .slider__display
+            img.slider__display-pic(src="/assets/img/contents/work.png" alt="work")
+          .slider__desc
+            .subtitle
+              p Сайт школы онлайн Образования
+            .slider__site-languages
+              p HTML , CSS, JAVASCRIPT
+            .slider__site-preview
+              a.preview__button(href="#")
+                svg.link__icon
+                  use(xlink:href='/assets/img/icons/symbol/sprite.svg#link')
+                | Посмотреть сайт
+          .slider__col.slider__col-right
+            .slider__toggle
+              .slider__toggle-prev
+                img.slider__display-pic(src="/assets/img/contents/work.png" alt="work")
+                a.slider__toggle-prev__button
+                  svg.slider-arrow-svg.slider-arrow-svg__prev
+                    use(xlink:href='/assets/img/icons/symbol/sprite.svg#arrow_down')
+              .slider__toggle-next
+                img.slider__display-pic(src="/assets/img/contents/work.png" alt="work")
+                a.slider__toggle-next__button(href="")
+                  svg.slider-arrow-svg.slider-arrow-svg__next
+                    use(xlink:href='/assets/img/icons/symbol/sprite.svg#arrow_up')
+      include ../parts/reviews
+
