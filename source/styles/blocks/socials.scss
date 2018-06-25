@@ -1,0 +1,13 @@
+.socials__item{
+  @include inlineblock;
+  margin-right: 25px;
+}
+.socials__item-link{
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+.socials__icon{
+  width: 35px;
+  height: 30px;
+}

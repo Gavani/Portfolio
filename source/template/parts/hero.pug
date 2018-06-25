@@ -4,7 +4,7 @@ mixin hero (additionClass)
       .hero__bg
         img(src="/assets/img/backgrounds/mountains.jpg", alt="background").hero__bg-img
       include ../parts/socials
-      +socials('header__socials')
+      +socials('hero')
       a(href="").hamburger
         svg.hamburger__svg
           use(xlink:href=`/assets/img/icons/symbol/sprite.svg#hamburger`)

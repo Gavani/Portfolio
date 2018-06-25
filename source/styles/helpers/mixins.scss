@@ -1,6 +1,6 @@
 @mixin inlineblock($valign : top){
     display: inline-block;
-    vertical-align: $valing;
+    vertical-align: $valign;
 }
 
 @mixin centered($axes : both){

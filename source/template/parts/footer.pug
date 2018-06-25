@@ -1,10 +1,8 @@
 footer.footer
   .footer__top-container
     .footer__top-left
-      ul.footer__menu
-        each item in ['Мои работы', 'Обо мне', 'Блог', 'Авторизация']
-          li.footer__menu-item
-            a(href="#").footer__menu-link= item
+      include ../parts/menu
+      +menu("footer")
     .footer__top-right
       ul.footer__socials
         include socials

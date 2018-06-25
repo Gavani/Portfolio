@@ -1,0 +1,26 @@
+mixin menu (additionClass)
+
+  -
+    var nav = [
+    {
+      name : "Мои работы",
+      href : "portfolio.html"
+    },
+    {
+      name : "Обо мне",
+      href : "about.html"
+    },
+    {
+      name : "Блог",
+      href : "blog.html"
+    },
+    {
+      name : "Авторизация",
+      href : "auth.html"
+    }
+   ]
+
+  ul(class=`menu menu__${additionClass}`)
+    each item in nav
+      li.menu__item
+        a(href=`${item.href}`).menu__link= item.name
