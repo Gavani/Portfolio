@@ -1,0 +1,29 @@
+.user{
+  text-align: center;
+}
+.user__photo{
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.user__photo-img{
+  max-width: 100%;
+  height: auto;
+}
+.user__name{
+  margin-bottom: 5px;
+  p{
+    font-size: 35px;
+    color: #fff;
+    @include roboto(medium);
+  }
+}
+.user__desc{
+  p{
+    @include roboto(light);
+    font-size: 16px;
+    color: rgba(#fff, .8);
+  }
+}

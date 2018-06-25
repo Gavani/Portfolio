@@ -1,0 +1,11 @@
+.arrow__down{
+  position: absolute;
+  bottom: 50px;
+  display: block;
+  @include centered(x);
+}
+.arrow__down-svg{
+  width: 55px;
+  height: 40px;
+  fill: rgba(#fff, .8);
+}

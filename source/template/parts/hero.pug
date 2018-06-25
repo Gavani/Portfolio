@@ -22,13 +22,13 @@ mixin hero (additionClass)
         else
           +section__title('section__title-header section__title-header_dims', 'blog_header')
           .user.hero__user-block
-          .user__photo
-            .user__photo-avatar
-              img(src="/assets/img/contents/user-lit.jpg" alt="").user__photo-img
-          .title 
-            p Блог
-          .title__desc 
-            p Статьи, которые я написал
+            .user__photo
+              .user__photo-avatar
+                img(src="/assets/img/contents/user-lit.jpg" alt="").user__photo-img
+            .title 
+              p Блог
+            .title__desc 
+             p Статьи, которые я написал
       if page !== "Blog"
         a(href="#").arrow__down
           svg.arrow__down-svg
