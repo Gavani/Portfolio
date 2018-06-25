@@ -1,5 +1,43 @@
 extends ../main-layout
 
+block variables
+  -
+    var title = "Welcome";
+    var nav = [
+      {
+        name : "Мои работы",
+        href : "portfolio.html"
+      },
+      {
+        name : "Обо мне",
+        href : "about.html"
+      },
+      {
+        name : "Блог",
+        href : "blog.html"
+      }
+    ]
+
 block content
-       
+  section.section.welcome__section
+    .parallax.welcome__parallax
+    .welcome__wrapper
+      header.welcome__header
+        a(href="#").login__button Авторизоваться
+      .welcome__user-wrapper
+        .user.hero__user-block
+          .user__photo
+            .user__photo-avatar
+              img(src="/assets/img/contents/user-lit.jpg" alt="").user__photo-img
+          .user__name 
+            p Ion Talmaci
+          .user__desc 
+            p Личный сайт веб разработчика
+      include ../parts/socials 
+      +socials('welcome')
+      ul.welcome__nav
+        each item in nav
+          li.welcome__nav-itme
+            a(href=`${item.href}`).welcome__nav-link= item.name
+
         
