@@ -21,5 +21,8 @@ $subtitle-fs    :   35px;
 @import 'helpers/mixins';
 
 //blocks
-@import 'blocks/**/*.scss'
+@import 'blocks/**/*.scss';
+
+//components
+@import 'components/**/*.scss';
 

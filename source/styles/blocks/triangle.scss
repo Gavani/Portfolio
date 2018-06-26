@@ -1,0 +1,10 @@
+.triangle{
+  width: 50%;
+
+  &_fill_white{
+    fill: $white;
+  }
+  &_fill_beige{
+    fill: $beige;
+  }
+}
