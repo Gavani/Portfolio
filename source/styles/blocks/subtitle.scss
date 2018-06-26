@@ -1,0 +1,26 @@
+.subtitle{
+  p{
+    @include bernier;
+    font-size: 35px;
+    color:  $gray-green;
+    padding: 0 15px;
+    position: relative;
+    display: inline-block;
+
+    &:before, &:after{
+      content: "";
+      display: block;
+      position: absolute;
+      top: 22px;
+      width: 20px;
+      height: 5px;
+      background: rgba($black, .2);
+    }
+    &:before{
+      right: 100%;
+    }
+    &:after{
+      left: 100%;
+    }
+  }
+}

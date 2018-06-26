@@ -1,0 +1,32 @@
+.skill-section__title{
+  @include roboto(medium);
+  font-size: 28px;
+  color: $gray-green;
+}
+.skill-section__list{
+  margin-bottom: 50px;
+}
+.skills-section__item{
+  width: 110px;
+  height: 110px;
+  @include inlineblock;
+  margin-right: 20px;
+}
+.skill{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.skill__circles{
+  width:  100%;
+}
+.circle__second{
+  stroke-dasharray: 200 282.6;
+}
+.skill__name{
+  position: absolute;
+  @include centered;
+  @include roboto(medium);
+  font-size: 13px;
+  color: $green;
+}

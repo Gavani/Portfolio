@@ -8,6 +8,8 @@
 }
 .about__left{
   background: $white;
+  @extend %clearfix;
+  height: 869px;
 }
 .about__right{
   background: $beige;
@@ -15,4 +17,59 @@
 .about__triangles{
   position: absolute;
   bottom: 100%;
+}
+.about__section-title, .user__about{
+  @include inlineblock;
+}
+.about__section-title{
+  width: 45%;
+}
+.user__about{
+  width: 54%;
+}
+.user__about-photo{
+  margin-top: 50px;
+  width: 95%;
+  margin-bottom: 30px;
+}
+.user__about-img{
+  width: 100%;
+}
+.user__about-title{
+  margin-bottom: 30px;
+  text-align: center;
+  .subtitle{
+    p{
+      padding: 0 30px;
+    }
+  }
+}
+.user__about-desc{
+  max-width: 90%;
+  p{
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: $gray-green;
+  }
+}
+.about__data{
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 50px;
+}
+.about__user-info{
+  margin-bottom: 50px;
+  .subtitle{
+    text-align: center;
+    margin-bottom: 30px;
+    p{
+      max-width: 265px;
+    }
+  }
+}
+.about__user-info-text{
+  p{
+    font-size: 16px;
+    color: $gray-green;
+  }
 }
