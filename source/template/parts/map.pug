@@ -1,0 +1,35 @@
+-
+  var nav =[
+    {
+      name : "itlamaci4",
+      svg : 'skype'
+    },
+    {
+      name : "ntalmaci171@gmail.com",
+      svg : 'envelope'
+    },
+    {
+      name : "+373 69 472 878",
+      svg : 'phone'
+    },
+    {
+      name : "Moldova, or.Chisinau, str.Dacia",
+      svg : 'map_marker'
+    }
+  ];
+section.section.map
+  .map__contacts-wrapp
+    .map__contacts
+      .subtitle
+        p Контакты
+      ul.map__contacts-list
+        each item in nav
+          li.map__contacts-item           
+            if item.href == undefined
+              .map__contacts-container= item.name
+                svg.map__contacts-svg
+                  use(xlink:href=`/assets/img/icons/symbol/sprite.svg#${item.svg}`)
+            else
+              .map__contacts-container= item.name
+                svg.map__contacts-svg
+                  use(xlink:href=`/assets/img/icons/symbol/sprite.svg#${item.svg}`)

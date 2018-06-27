@@ -1,0 +1,15 @@
+.menu__item{
+  @include inlineblock(middle);
+  margin-right: 30px;
+
+  &:hover{
+    .menu__link{
+      color: $green;
+    }
+  }
+}
+.menu__link{
+  color: #fff;
+  text-decoration: none;
+  transition: .2s linear;
+}
