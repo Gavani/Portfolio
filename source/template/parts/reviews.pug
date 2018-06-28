@@ -3,9 +3,9 @@ section.section.reviews(style="background: url(/assets/img/backgrounds/water.png
     +title('reviews__title', 'about_header', 'Что  обо мне говорят')
     ul.reviews__list
       li.reviews__item
-        .quotation-mark "
+        .quotation-mark 
         article.review__content
-          p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+          p Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
         .review-pic
           img.review-pic__avatar(src="/assets/img/contents/pic1.jpg")
         .review__user-info
@@ -14,7 +14,7 @@ section.section.reviews(style="background: url(/assets/img/backgrounds/water.png
           .review__user-ocup
             p основатель Loftschool
       li.reviews__item
-        .quotation-mark "
+        .quotation-mark 
         article.review__content
           p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
         .review-pic
@@ -24,22 +24,24 @@ section.section.reviews(style="background: url(/assets/img/backgrounds/water.png
             p Сабанцев Владимир
           .review__user-ocup
             p преподаватель
-    .reviews__form.contact__form
-      .subtitle.review__subtitle
-        p Связаться со мной  
-      form.form(action="#")
-        .contact__form-fields
-          .contact__form-wrapper
-            input(type="text" placeholder="Имя").contact__form-name
-          .contact__form-wrapper
-            input(type="text" placeholder="Emaail").contact__form-email
-          .contact__form-wrapper
-            textarea(placeholder="Ваше сообщение").contact__form-mess
-        .contact__form-btn
-          .btn__send.form__btn
-            a(href="#").btn__link Отправить
-          .btn__clear.form__btn
-            a(href="#").btn__link Очистить
-    a(href="#").arrow__down
-      svg.arrow__down-svg
+    .contact__form-wrap
+      .contact__form
+        .contact__form-bg
+        .subtitle.contact__subtitle
+          p Связаться со мной  
+        form.form(action="#")
+          .contact__form-fields
+            .contact__form-fields-wrapp
+              input(type="text" placeholder="Имя").contact__form-name
+            .contact__form-fields-wrapp
+              input(type="text" placeholder="Email").contact__form-email
+            .contact__form-fields-wrapp
+              textarea(placeholder="Ваше сообщение").contact__form-mess
+          .contact__form-btn
+            .btn__submit.form__btn
+              button(type="submit").btn__submit-link Отправить
+            .btn__reset.form__btn
+              button(type="reset").btn__reset-link Очистить
+    a(href="#").arrow__up
+      svg.arrow__up-svg
         use(xlink:href='/assets/img/icons/symbol/sprite.svg#arrow_up')

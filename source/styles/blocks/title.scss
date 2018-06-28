@@ -15,10 +15,10 @@
       content: "";
       display: block;
       position: absolute;
+      top: 50%;
       width: 20px;
       height: 5px;
       background: rgba($black, .2);
-      @include centered(y);
     }
     &:before{
       right: 100%;

@@ -15,3 +15,170 @@
 .portfolio__title{
   padding: 10px 0;
 }
+.reviews{
+  padding-top: 50px;
+  height: 1400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.reviews__wrap{
+  height: 1200px;
+  width: 820px;
+  margin: 0 auto;
+}
+.reviews__title{
+  margin-bottom: 50px;
+  .title__svg{
+    fill: rgba(#6d7070, .15);
+  }
+  p{
+    width: 340px;
+    line-height: 60px;
+    &:after, &:before{
+      top: 25%;
+    }
+  }
+}
+.reviews__list{
+  width: 100%;
+  margin-bottom: 100px;
+}
+.reviews__item{
+  @include inlineblock;
+  width: 45%;
+  margin-right: 4%;
+}
+.quotation-mark{
+  background: url('/assets/img/icons/quotation.png') no-repeat center;
+  width: 40px;
+  height: 35px;
+  @include bernier;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.review__content{
+  margin-bottom: 20px;
+}
+.review-pic, .review__user-info{
+  @include inlineblock(middle);
+}
+.review-pic{
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.review-pic__avatar{
+  max-width: 100%;
+}
+.review__user-info{
+  max-width: 235px;
+}
+.review__user-name{
+  p{
+    @include roboto(bold);
+    font-size: 16px;
+    color: $green;
+  }
+}
+.review__user-ocup{
+  p{
+    color: $green;
+  }
+}
+.contact__form-wrap{
+  text-align: center;
+  padding-bottom: 80px;
+}
+.contact__form{
+  @include inlineblock;
+  text-align: left;
+  padding: 35px 0 0 0;
+  position: relative;
+  background: #ccc;
+  width: 365px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.contact__form-bg{
+  background: url('/assets/img/backgrounds/water.png') no-repeat center #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 1489px;
+  background-position: -500px -393px;
+  filter: blur(10px);
+  margin: -10px;
+  overflow: hidden;
+}
+.contact__subtitle{
+  margin-bottom: 40px;
+}
+.contact__form-fields{
+  margin: 0 20px;
+  position: relative;
+}
+.contact__form-fields-wrapp{
+  margin-bottom: 20px;
+  input, textarea{
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    outline-color: $green;
+    resize: none;
+  }
+  ::placeholder{
+    color: rgba($black, .5);
+  }
+}
+.contact__form-mess{
+  height: 140px;
+}
+.contact__form-btn{
+  @extend %clearfix;
+}
+.form__btn{
+  width: 49.8%;
+}
+.btn__submit{
+  float: left;
+}
+.btn__reset{
+  float:  right;
+}
+.btn__submit-link, .btn__reset-link{
+  width: 100%;
+  padding: 15px 0;
+  cursor: pointer;
+  border: transparent;
+  background: rgba($green, .3);
+  color: #fff;
+  @include roboto(medium);
+  transition: .2s linear;
+  position: relative;
+  outline: none;
+
+  &:hover{
+    background: rgba($green, .85);
+  }
+}
+.btn__submit-link{
+
+  &:after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: rgba(#fff, .5);
+    z-index: 200;
+  }
+}
