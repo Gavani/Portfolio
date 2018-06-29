@@ -1,0 +1,74 @@
+$wrap-width: 380px;
+
+.auth{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: url('/assets/img/backgrounds/mountains-index.jpg') no-repeat top;
+  background-size: cover;
+  text-align: center;
+  &:after{
+    content: "";
+    @include inlineblock(middle);
+    height: 100%;
+    width: 0;
+  }
+}
+.auth__wrapper{
+  @include inlineblock(middle);
+  background: rgba(#fff, .85);
+  border-radius: 5px;
+  padding-top: 30px;
+  width: $wrap-width;
+  overflow: hidden;
+
+  .subtitle{
+    margin-bottom: 30px;
+  }
+}
+.form__field-wrap{
+  margin: 0 30px 20px 30px;
+}
+.form__field{
+  display: block;
+  position: relative;
+  font-size: 0;
+}
+.form__field-input, .form__field-svg-wrap{
+  @include inlineblock;
+  font-size: 16px;
+}
+.form__field-input{
+  padding: 15px 15px 15px 15px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 85%;
+  margin-left: 15%;
+  outline: none;
+  border: 1px solid transparent;
+  transition: .2s linear;
+  &:focus{
+    border-color: $green;
+    + .form__field-svg-wrap .form__field-svg{
+      fill: $green;
+    }
+  }
+}
+.form__field-svg-wrap{
+  width: 15%;
+  height: 49.5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f0efe9;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.form__field-svg{
+  width: 20px;
+  height: 20px;
+  fill: #c4cbcd;
+  @include centered;
+  transition: .2s linear;
+}

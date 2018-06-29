@@ -12,30 +12,35 @@ block content
         p Авторизуйтесь
       form.auth__form(action="#" method="get")
         .form__field-wrap
-          input(class="form__field" id="nickname" type="text" name="nickname" placeholder="Логин")
-          label(for="nickname" class="form__field-pic")
-            svg.form__field-svg
-              use(xlink:href="/assets/img/icons/symbol/sprite.svg#login")
+          label( class="form__field")
+            input(class="form__field-input" type="text" name="nickname" placeholder="Логин")
+            .form__field-svg-wrap
+              svg.form__field-svg
+               use(xlink:href="/assets/img/icons/symbol/sprite.svg#login")
         .form__field-wrap
-          input(class="form__field" id="pass" type="password" name="password" placeholder="Пароль")
-          label(for="pass" class="form__field-pic")
-            svg.form__field-svg
-              use(xlink:href="/assets/img/icons/symbol/sprite.svg#password")
+          label( class="form__field")
+            input(class="form__field-input" type="password" name="password" placeholder="Пароль")
+            .form__field-svg-wrap
+              svg.form__field-svg
+                use(xlink:href="/assets/img/icons/symbol/sprite.svg#password")
         .form__capture-wrap
           input#human.form__capture(type="checkbox", name="human" value="yes")
           label(for="human").form__capture-label
-            p Я человек
+            .form__capture-fake
+            .form__capture-text Я человек
         .form__confirm-wrap
           .form__confirm-head
             h3 Вы точно не робот?
           .form__confirm-item
             input#not-robot(type="radio", name="is-robot" class="form__confirm")
             label(for="not-robot").form__confirm-label
-              p Да
+              .form__capture-fake
+              .form__capture-text Да
           .form__confirm-item
             input#is-robot(type="radio", name="is-robot" class="form__confirm")
             label(for="is-robot").form__confirm-label
-              p Не уверен
+              .form__capture-fake
+              .form__capture-text Не уверен
         .form__menu
           a.form__menu-item(href="index.html") На главную
           button.form__menu-item.form__menu-item-submit(type="submit") Войти
