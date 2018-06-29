@@ -1,16 +1,17 @@
-footer.footer
-  .footer__top-container
-    .footer__top-left
-      include ../parts/menu
-      +menu("footer")
-    .footer__top-right
-      include socials
-      +socials('footer')
+mixin footer (additionClass)
+  footer(class=`footer footer__${additionClass}`)
+    .footer__top-container
+      .footer__top-left
+        include ../parts/menu
+        +menu("footer")
+      .footer__top-right
+        include socials
+        +socials('footer')
 
-  .footer__bottom-container
-    .footer__bottom-left
-      .footer__desc
-        p Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
-    .footer__bottom-right
-      .footer__copyright
-        p  © Владимир Астахов | создано с любовью в LoftSchool | 2016
+    .footer__bottom-container
+      .footer__bottom-left
+        .footer__desc
+          p Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+      .footer__bottom-right
+        .footer__copyright
+          p  © Владимир Астахов | создано с любовью в LoftSchool | 2016

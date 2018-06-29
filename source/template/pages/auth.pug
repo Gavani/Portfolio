@@ -18,31 +18,32 @@ block content
               svg.form__field-svg
                use(xlink:href="/assets/img/icons/symbol/sprite.svg#login")
         .form__field-wrap
-          label( class="form__field")
+          label(class="form__field")
             input(class="form__field-input" type="password" name="password" placeholder="Пароль")
             .form__field-svg-wrap
               svg.form__field-svg
                 use(xlink:href="/assets/img/icons/symbol/sprite.svg#password")
         .form__capture-wrap
-          input#human.form__capture(type="checkbox", name="human" value="yes")
-          label(for="human").form__capture-label
-            .form__capture-fake
+          label.form__capture-label
+            input.form__capture(type="checkbox", name="human" value="yes")
+            .form__capture-fake.form__capture-fake-checkbox
+              svg.form__capture-fake-svg
+                use(xlink:href="/assets/img/icons/symbol/sprite.svg#check")
             .form__capture-text Я человек
         .form__confirm-wrap
-          .form__confirm-head
-            h3 Вы точно не робот?
+          .form__confirm-head Вы точно не робот?
           .form__confirm-item
-            input#not-robot(type="radio", name="is-robot" class="form__confirm")
-            label(for="not-robot").form__confirm-label
-              .form__capture-fake
-              .form__capture-text Да
+            label.form__confirm-label
+              input(type="radio", name="is-robot" class="form__confirm")
+              .form__confirm-fake.form__confirm-fake-radio
+              .form__confirm-text Да
           .form__confirm-item
-            input#is-robot(type="radio", name="is-robot" class="form__confirm")
-            label(for="is-robot").form__confirm-label
-              .form__capture-fake
-              .form__capture-text Не уверен
+            label.form__confirm-label
+              input(type="radio", name="is-robot" class="form__confirm" checked)
+              .form__confirm-fake.form__confirm-fake-radio
+              .form__confirm-text Не уверен
         .form__menu
-          a.form__menu-item(href="index.html") На главную
+          a.form__menu-item.form__menu-item-nav(href="index.html") На главную
           button.form__menu-item.form__menu-item-submit(type="submit") Войти
 
           

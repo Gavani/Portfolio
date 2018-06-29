@@ -5,7 +5,6 @@
     @include bernier(regular);
     font-size: 63px;
     color: $black;
-    position: absolute;
     @include centered;
     padding: 0 10px;
     min-width: 230px;

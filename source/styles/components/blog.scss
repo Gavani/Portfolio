@@ -1,0 +1,38 @@
+.hero__blog{
+  height: 440px;
+  .hero__header{
+    height: 440px;
+  }
+  .section__title{
+    height: 27vh;
+  }
+  .user__photo{
+    margin: 0;
+    width: 130px;
+    height: 130px;
+  }
+  .title{
+    height: 89px;
+    width: 140px;
+    margin: 0 auto;
+    p{
+      color: white;
+      letter-spacing: 2px;
+      min-width: 140px;
+      &:after, &:before{
+        background: rgba(#fff, .2);
+      }
+    }
+  }
+  .title__desc{
+    p{
+      color: rgba(#fff, .7);
+    }
+  }
+}
+.svg__block{
+  position: relative;
+}
+.footer__blog{
+  margin-top: 0;
+}

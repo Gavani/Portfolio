@@ -30,7 +30,6 @@ $wrap-width: 380px;
   margin: 0 30px 20px 30px;
 }
 .form__field{
-  display: block;
   position: relative;
   font-size: 0;
 }
@@ -71,4 +70,129 @@ $wrap-width: 380px;
   fill: #c4cbcd;
   @include centered;
   transition: .2s linear;
+}
+.form__capture-wrap{
+  margin-bottom: 15px;
+}
+.form__capture-label, .form__confirm-label{
+  cursor: pointer;
+}
+.form__capture, .form__confirm{
+  display: none;
+}
+.form__capture{
+  &:checked + .form__capture-fake-checkbox{
+    background: $green;
+    border-color: $green;
+    .form__capture-fake-svg{
+      display: block;
+    }
+  }
+}
+.form__capture-fake, .form__capture-text, .form__confirm-fake, .form__confirm-text{
+  @include inlineblock(middle);
+}
+.form__capture-fake, .form__confirm-fake{
+  margin-right: 5px;
+  width: 19px;
+  height: 19px;
+  margin-top: 1px;
+  transition: .2s linear;
+  background: #fff;
+  border: 1px solid #cfcfcf;
+}
+.form__capture-fake-checkbox{
+  border-radius: 2px;
+  position: relative;
+}
+.form__capture-fake-svg{
+  fill: #fff;
+  @include centered;  
+  width: 11px;
+  height: 10px;
+  display: none;
+}
+.form__confirm-wrap{
+  margin-bottom: 30px;
+}
+.form__confirm-head{
+  @include roboto(bold);
+  margin-bottom: 5px;
+}
+.form__confirm-item{
+  display: inline-block;
+  margin-right: 30px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+.form__confirm{
+  &:checked{
+    + .form__confirm-fake-radio{
+      &:before{
+        display: block;
+      }
+      + .form__confirm-text{
+        color: $green;
+      }
+   }
+  }
+}
+.form__confirm-fake-radio{
+  border-radius: 50%;
+  position: relative;
+  transition: .2s linear;
+  &:before{
+    content: "";
+    @include centered;
+    width: 8px;
+    height: 8px;
+    background: $green;
+    display: none;
+    border-radius: 50%;
+    transition: inherit;
+  }
+}
+.form__menu{
+  background: $green;
+  font-size: 0;
+  .form__menu-item{
+    &:last-child{
+      &:after{
+        display: none;
+      }
+    }
+  }
+}
+.form__menu-item{
+  font-size: 16px;
+  display: inline-block;
+  width: ($wrap-width/2)-2;
+  background: rgba($green, .8);
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+  transition: .2s linear;
+  &:hover{
+    background: rgba($green-dark, .8);
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 2px;
+    height: 100%;
+    background: rgba(#fff, .5);
+  }
+}
+.form__menu-item-nav{
+  text-decoration: none;
+  padding: 15px 0;
+  margin-right: 2px;
+
+}
+.form__menu-item-submit{
+  border: none;
+  padding: 17px 0;
 }
