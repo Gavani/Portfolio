@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Authentication</title>
+    <link rel="stylesheet" href="./assets/styles/foundation.css"/>
+    <link rel="stylesheet" href="./assets/styles/app.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="section auth">
+        <div class="paralax auth__paralax"></div>
+        <div class="auth__wrapper">
+          <div class="subtitle">
+            <p>Авторизуйтесь</p>
+          </div>
+          <form class="auth__form" action="#" method="get">
+            <div class="form__field-wrap">
+              <label class="form__field">
+                <input class="form__field-input" type="text" name="nickname" placeholder="Логин"/>
+                <div class="form__field-svg-wrap">
+                  <svg class="form__field-svg">
+                    <use xlink:href="/assets/img/icons/symbol/sprite.svg#login"></use>
+                  </svg>
+                </div>
+              </label>
+            </div>
+            <div class="form__field-wrap">
+              <label class="form__field">
+                <input class="form__field-input" type="password" name="password" placeholder="Пароль"/>
+                <div class="form__field-svg-wrap">
+                  <svg class="form__field-svg">
+                    <use xlink:href="/assets/img/icons/symbol/sprite.svg#password"></use>
+                  </svg>
+                </div>
+              </label>
+            </div>
+            <div class="form__capture-wrap">
+              <label class="form__capture-label">
+                <input class="form__capture" type="checkbox" name="human" value="yes"/>
+                <div class="form__capture-fake form__capture-fake-checkbox">
+                  <svg class="form__capture-fake-svg">
+                    <use xlink:href="/assets/img/icons/symbol/sprite.svg#check"></use>
+                  </svg>
+                </div>
+                <div class="form__capture-text">Я человек</div>
+              </label>
+            </div>
+            <div class="form__confirm-wrap">
+              <div class="form__confirm-head">Вы точно не робот?</div>
+              <div class="form__confirm-item">
+                <label class="form__confirm-label">
+                  <input class="form__confirm" type="radio" name="is-robot"/>
+                  <div class="form__confirm-fake form__confirm-fake-radio"></div>
+                  <div class="form__confirm-text">Да</div>
+                </label>
+              </div>
+              <div class="form__confirm-item">
+                <label class="form__confirm-label">
+                  <input class="form__confirm" type="radio" name="is-robot" checked="checked"/>
+                  <div class="form__confirm-fake form__confirm-fake-radio"></div>
+                  <div class="form__confirm-text">Не уверен</div>
+                </label>
+              </div>
+            </div>
+            <div class="form__menu"><a class="form__menu-item form__menu-item-nav" href="index.html">На главную</a>
+              <button class="form__menu-item form__menu-item-submit" type="submit">Войти</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
