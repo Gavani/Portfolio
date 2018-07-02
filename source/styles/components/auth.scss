@@ -7,6 +7,8 @@ $wrap-width: 380px;
   background: url('/assets/img/backgrounds/mountains-index.jpg') no-repeat top;
   background-size: cover;
   text-align: center;
+  min-width: 26.67777rem;
+
   &:after{
     content: "";
     @include inlineblock(middle);

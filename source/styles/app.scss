@@ -13,12 +13,12 @@ $blue       : #6da3bd;
 $title-fs       :   63px;
 $subtitle-fs    :   35px;
 
+//mixins
+@import 'helpers/mixins';
+
 //layout setups
 @import 'layout/fonts';
 @import 'layout/setups';
-
-//mixins
-@import 'helpers/mixins';
 
 //blocks
 @import 'blocks/**/*.scss';

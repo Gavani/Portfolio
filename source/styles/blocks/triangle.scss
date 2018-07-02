@@ -6,6 +6,9 @@
   }
   &_fill_beige{
     fill: $beige;
+    @include laptop{
+      fill: $white;
+    }
   }
   &_fill_whitnes{
     fill: #faf8f0;

@@ -1,9 +1,22 @@
+html{
+    @include desktop{
+        font-size: 16px;
+    }
+    @include laptop{
+        font-size: 14px;
+    }
+    @include tablet{
+        font-size: 13px;
+    }
+    @include phone{
+        font-size: 12px;
+    }
+}
 html, body{
     height: 100%;
 }
 body{
     @include roboto;
-    font-size: 16px;
     -webkit-font-smoothing: antialiased;
     line-height: 1.42;
     color: $gray-green;
@@ -13,10 +26,7 @@ body{
     position: relative;
     min-height: 100%;
     overflow: hidden;
-}
-.container{
-    width: 90%;
-    margin: 0 auto;
+    min-width: 25rem;
 }
 ul{
     padding: 0;

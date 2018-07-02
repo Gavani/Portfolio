@@ -11,31 +11,32 @@ block content
   +hero('about')
   main(role="main").page-main
     section.section.about
+      svg(
+        viewbox="0 0 1000 150" 
+        preserveAspectRatio="none"
+        class="triangle triangle_fill_white about__triangles about__triangle-left")
+        polygon(points="0,0 0,150 1000,150")
+      svg(
+        viewbox="0 0 1000 150" 
+        preserveAspectRatio="none"
+        class="triangle triangle_fill_beige about__triangles about__triangle-right")
+        polygon(points="0,150 1000,150 1000,0")
       .about__left
-        svg(
-          viewbox="0 0 1000 150" 
-          preserveAspectRatio="none"
-          class="triangle triangle_fill_white about__triangles")
-          polygon(points="0,0 0,150 1000,150")
         +title('about__section-title' , 'about_header', 'Обо мне')
         .user__about
-          .user__about-photo
-            img(src="/assets/img/contents/user-big.jpg" alt="").user__about-img
-          .user__about-title
-            .subtitle 
-              p Кто Я
-          .user__about-desc
-            p 
-              |Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
-            p
-              |Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+          .user__about-wrap
+            .user__about-photo
+              img(src="/assets/img/contents/user-big.jpg" alt="").user__about-img
+            .user__about-title
+              .subtitle 
+                p Кто Я
+            .user__about-desc
+              p 
+                |Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+              p
+                |Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
 
       .about__right
-        svg(
-          viewbox="0 0 1000 150" 
-          preserveAspectRatio="none"
-          class="triangle triangle_fill_beige about__triangles")
-          polygon(points="0,150 1000,150 1000,0")
         .about__data
           .about__data-description.about__user-info
             .subtitle
