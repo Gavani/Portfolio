@@ -17,8 +17,8 @@ module.exports = function () {
             $.config.browsers
         ))
         .pipe($.cssunit({
-            type     :    'px-to-vw',
-            width    :    750
+            type     :    'px-to-rem',
+            rootSize :    16
         }))
         .pipe($.gp.sourcemaps.write())
         .pipe($.gulp.dest($.config.build + '/assets/styles'))
@@ -35,8 +35,8 @@ module.exports = function () {
             $.config.browsers
         ))
         .pipe($.cssunit({
-            type     :    'px-to-vw',
-            width    :    750
+            type     :    'px-to-rem',
+            rootSize :    16
         }))
         .pipe($.gp.csscomb())
         .pipe($.gp.csso())
