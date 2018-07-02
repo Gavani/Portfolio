@@ -28,3 +28,30 @@
         clear: both;
     }
 }
+
+//responsive
+
+//PC
+@mixin desktop{
+    @media screen and (max-width: 1200px){
+        @content;
+    }
+}
+//laptop
+@mixin laptop{
+    @media screen and (max-width: 991px){
+        @content;
+    }
+}
+//tablets
+@mixin tablet{
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
+//phones
+@mixin phone{
+    @media screen and (max-width: 575px){
+        @content;
+    }
+}
