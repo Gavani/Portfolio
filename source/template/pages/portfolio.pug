@@ -22,10 +22,10 @@ block content
           polygon(points="0,150 1000,150 1000,0")
         +title('portfolio__title', 'works_header', 'Мои Роботы')                                                      
       section.section.slider
-        .slider__col.slider__col-left
-          .slider__desc
+        .slider__desc
+          .slider__desc-wrap
             .subtitle
-              p Сайт школы онлайн Образования
+                p Сайт школы онлайн Образования
             .slider__site-languages
               p HTML , CSS, JAVASCRIPT
             .slider__site-preview
@@ -33,20 +33,19 @@ block content
                 svg.preview__button-icon
                   use(xlink:href='/assets/img/icons/symbol/sprite.svg#link')
                 span.preview__button-text Посмотреть сайт
-        .slider__col.slider__col-right
-          .slider__display
-            img.slider__display-pic(src="/assets/img/contents/work.png" alt="work")
-          .slider__toggle
-            .slider__toggle-prev
-              img.slider__toggle-pic.slider__toggle-pic-prev(src="/assets/img/contents/work.png" alt="work")
-              a.slider__toggle-prev__button.slider__toggle-button(href="#")
-                svg.slider__arrow-svg.slider-arrow-svg__prev
-                  use(xlink:href='/assets/img/icons/symbol/sprite.svg#arrow_down')
-            .slider__toggle-next
-              img.slider__toggle-pic.slider__toggle-pix-next(src="/assets/img/contents/work.png" alt="work")
-              a.slider__toggle-next__button.slider__toggle-button(href="#")
-                svg.slider__arrow-svg.slider-arrow-svg__next
-                  use(xlink:href='/assets/img/icons/symbol/sprite.svg#arrow_up')
+        .slider__display
+          img.slider__display-pic(src="/assets/img/contents/work.png" alt="work")
+        .slider__toggle
+          .slider__toggle-prev
+            img.slider__toggle-pic.slider__toggle-pic-prev(src="/assets/img/contents/work.png" alt="work")
+            a.slider__toggle-prev__button.slider__toggle-button(href="#")
+              svg.slider__arrow-svg.slider-arrow-svg__prev
+                use(xlink:href='/assets/img/icons/symbol/sprite.svg#arrow_down')
+          .slider__toggle-next
+            img.slider__toggle-pic.slider__toggle-pix-next(src="/assets/img/contents/work.png" alt="work")
+            a.slider__toggle-next__button.slider__toggle-button(href="#")
+              svg.slider__arrow-svg.slider-arrow-svg__next
+                use(xlink:href='/assets/img/icons/symbol/sprite.svg#arrow_up')
       include ../parts/reviews
       include ../parts/footer
       +footer('portfolio')
