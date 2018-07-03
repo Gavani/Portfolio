@@ -2,9 +2,21 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
+  @include tablet{
+    height: 600px;
+  }
+  @include phone{
+    height: 400px;
+  }
 }
 .hero__header{
   height: 100vh;
+  @include tablet{
+    height: 600px;
+  }
+  @include phone{
+    height: 400px;
+  }
 }
 .hero__bg{
   width: 100vw;
@@ -20,6 +32,12 @@
     height: 100%;
     background: rgba(#016672, .3)
   }
+  @include tablet{
+    height: 600px;
+  }
+  @include phone{
+    height: 400px;
+  }
 }
 .hero__bg-img{
   width: 100%;
@@ -29,6 +47,10 @@
   position: absolute;
   top: 50px;
   left: 50px;
+  @include phone{
+    left: 20px;
+    top: 20px;
+  }
 
   .socials__item{
     &:hover{
@@ -36,10 +58,17 @@
         fill: #fff;
       }
     }
+    @include phone{
+      margin-right: 5px;
+    }
   }
   
   .socials__icon{
     fill: rgba(#fff, .5);
+    @include phone{
+      width: 25px;
+      height: 20px;
+    }
   }
 }
 

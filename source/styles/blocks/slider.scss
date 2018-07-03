@@ -4,6 +4,10 @@
 .slider__col{
   width: 50%;
   float: left;
+  @include tablet{
+    width: 100%;
+    float: none;
+  }
 }
 .slider__col-left{
   background: #f0efe9;
@@ -14,6 +18,10 @@
     width: 0;
     height: 100%;
     @include inlineblock(middle);
+  }
+  @include tablet{
+    height: auto;
+    padding: 50px 0;
   }
 }
 .slider__desc{
@@ -39,6 +47,9 @@
     height: 1px;
     background: rgba($green, .3);
     position: absolute;
+    @include phone{
+      height: 0.1rem;
+    }
   }
   &:before{
     bottom: 100%;
@@ -81,10 +92,16 @@
 .slider__col-right{
   background: #efebe0;
   height: 750px;
+  @include tablet{
+    height: auto;
+  }
 }
 .slider__display{
   height: 70%;
   position: relative;
+  @include phone{
+    height: 300px;
+  }
 }
 .slider__display-pic{
   max-width: 100%;

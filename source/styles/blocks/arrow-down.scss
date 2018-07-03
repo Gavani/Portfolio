@@ -4,9 +4,16 @@
   bottom: 50px;
   display: block;
   @include centered(x);
+  @include tablet{
+    bottom: 20px
+  }
 }
 .arrow__down-svg{
   width: 35px;
   height: 30px;
   fill: rgba(#fff, .8);
+  @include tablet{
+    width: 25px;
+    height: 20px;
+  }
 }

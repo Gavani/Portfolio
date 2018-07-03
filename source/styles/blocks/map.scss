@@ -1,11 +1,11 @@
 .map{
-  height: 1000px;
+  height: 1350px;
   background: $gray;
   text-align: center;
 }
 .map__contacts-wrapp{
   width: 100%;
-  height: 850px;
+  height: 1100px;
   &:after{
     content: "";
     @include inlineblock(middle);

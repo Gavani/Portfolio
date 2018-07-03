@@ -46,6 +46,9 @@
     width: 400px;
     text-align: center;
   }
+  @include phone{
+    width: 290px;
+  }
 }
 .about__triangle-right{
   right: 0;
@@ -93,6 +96,9 @@
     margin: 0 auto;
     width: 680px;
     text-align: center;
+  }
+  @include phone{
+    width: 95%;
   }
 }
 .about__user-info{

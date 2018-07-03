@@ -14,6 +14,15 @@
 }
 .portfolio__title{
   padding: 10px 0;
+  p{
+    @include phone{
+      width: 280px;
+      font-size: 3rem;
+    }
+  }
+  .title__svg{
+    height: 100px;
+  }
 }
 .reviews{
   padding-top: 50px;
@@ -22,11 +31,29 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  @include laptop{
+    height: 1600px;
+  }
+  @include tablet{
+    height: 1800px;
+  }
+  @include phone{
+    height: 1800px;
+    padding: 0;
+  }
 }
 .reviews__wrap{
   height: 1200px;
   width: 820px;
   margin: 0 auto;
+  @include tablet{
+    width: 650px;
+    height: 1400px;
+  }
+  @include phone{
+    width: 95%;
+    height: 1450px;
+  }
 }
 .reviews__title{
   margin-bottom: 50px;
@@ -40,15 +67,29 @@
       top: 25%;
     }
   }
+  @include phone{
+    margin-bottom: 0;
+  }
 }
 .reviews__list{
   width: 100%;
   margin-bottom: 100px;
+ @include tablet{
+    margin-bottom: 50px;
+  }
+  @include phone{
+    margin-bottom: 100px;
+  }
 }
 .reviews__item{
   @include inlineblock;
   width: 45%;
   margin-right: 4%;
+  @include tablet{
+    display: block;
+    width: 90%;
+    margin-bottom: 30px;
+  }
 }
 .quotation-mark{
   background: url('/assets/img/icons/quotation.png') no-repeat center;
@@ -57,6 +98,9 @@
   @include bernier;
   font-size: 35px;
   margin-bottom: 20px;
+  @include tablet{
+    margin: 0 auto 20px;
+  }
 }
 .review__content{
   margin-bottom: 20px;

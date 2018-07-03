@@ -8,6 +8,18 @@
   overflow: hidden;
   margin-bottom: 20px;
   display: inline-block;
+  @include laptop{
+    width: 180px;
+    height: 180px;
+  }
+  @include tablet{
+    width: 140px;
+    height: 140px;
+  }
+  @include phone{
+    width: 100px;
+    height: 100px;;
+  }
 }
 .user__photo-img{
   max-width: 100%;
@@ -26,5 +38,8 @@
     @include roboto(light);
     font-size: 16px;
     color: rgba(#fff, .8);
+    @include phone{
+      font-size: 14px;
+    }
   }
 }

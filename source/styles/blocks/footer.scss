@@ -12,6 +12,10 @@
     background: rgba(#fff, .2);
     @include centered;
   }
+  @include laptop{
+    height: 350px;
+    margin-top: -350px;
+  }
 }
 .footer__top-container, .footer__bottom-container{
   height: 50%;
@@ -24,9 +28,26 @@
   height: 100%;
   float: left;
   position: relative;
+  @include laptop{
+    width: 100%;
+    height: 50%;
+    float: none;
+  }
 }
 .menu__footer, .socials__footer, .footer__desc, .footer__copyright{
   @include centered(y);
+  @include laptop{
+    text-align: center;
+    @include centered;
+    width: 100%;
+  }
+}
+.menu__footer{
+  .menu__item{
+    @include phone{
+      margin-right: 10px;
+    }
+  }
 }
 .socials__footer{
   right: 0;
