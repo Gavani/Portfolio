@@ -37,11 +37,16 @@
   }
   @include phone{
     height: 400px;
+    background: url('/assets/img/backgrounds/mountains-index.jpg') no-repeat;
+    background-size: cover;
   }
 }
 .hero__bg-img{
   width: 100%;
   height: 100%;
+  @include phone{
+    display: none;
+  }
 }
 .socials__hero{
   position: absolute;

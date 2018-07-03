@@ -1,11 +1,32 @@
 .blog{
   margin-bottom: 50px;
-  .container{
+  .blog__container{
     @extend %clearfix;
+    width: 100%;
+    @include desktop{
+      width: 900px;
+      margin: 0 auto;
+    }
+    @include laptop{
+      width: 800px;
+    }
+    @include tablet{
+      width: 90%;
+      overflow: hidden;
+    }
+    &:before{
+      content: "";
+      
+    }
   }
 }
 .hero__blog{
   height: 440px;
+  .hero__bg{
+    @include phone{
+      height: 100%;
+    }
+  }
   .hero__header{
     height: 440px;
   }
@@ -40,10 +61,52 @@
   position: relative;
   padding-bottom: 50px;
 }
+.blog__triangles{
+  position: absolute;
+  bottom: 100%;
+  @include tablet{
+    bottom: 97%;
+  }
+}
+.blog__triangles-left{
+  left: 0;
+}
+.blog__triangles-right{
+  right: 0;
+}
 .blog__left{
   float: left;
   width: 280px;
   margin-right: 150px;
+  @include desktop{
+    margin-right: 100px
+  }
+  @include laptop{
+    margin-right: 50px;
+  }
+}
+.blog__left-closed{
+  @include tablet{
+    position: fixed;
+    left: -100%;
+  }
+}
+.blog__left-button{
+  position: fixed;  
+  left: 0;
+  top: 50%;
+  transform: translate(-60%, -50%);
+  width: 40px;
+  height: 60px;
+  background: $green;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  box-shadow: 2px 0px 10px 1px rgba(0,0,0, .3);
+  @include tablet{
+    display: block;
+  }
 }
 .blog__aside{
   text-align: right;
@@ -77,6 +140,15 @@
 .blog__right{
   float: left;
   width: 60%;
+  @include desktop{
+    width: 500px;
+  }
+  @include laptop{
+    width: 450px;
+  }
+  @include tablet{
+    width: 100%;
+  }
 }
 .blog__article{
   padding-bottom: 70px;

@@ -14,15 +14,16 @@ block content
           svg(
             viewbox="0 0 1000 150" 
             preserveAspectRatio="none"
-            class="triangle triangle_fill_white-blog works__triangles works__triangles-left")
+            class="triangle triangle_fill_white-blog blog__triangles blog__triangles-left")
             polygon(points="0,0 0,150 1000,150")
           svg(
             viewbox="0 0 1000 150" 
             preserveAspectRatio="none"
-            class="triangle triangle_fill_white-blog works__triangles works__triangles-right")
+            class="triangle triangle_fill_white-blog blog__triangles blog__triangles-right")
             polygon(points="0,150 1000,150 1000,0")
-        .container
-          .blog__left
+        .blog__container
+          .blog__left.blog__left-closed
+            button.blog__left-button
             aside.blog__aside
               ul.aside__list
                 each item, ndx in ['Самое важное в SASS', 'Приёмы в вёрстке, без которых не обходится ни один сайт', 'Самый необходимый набор Gulp плагинов', 'Почему я выбрал Jade']
