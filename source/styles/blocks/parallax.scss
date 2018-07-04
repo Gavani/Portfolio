@@ -1,0 +1,65 @@
+.parallax{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  left: -5%;
+  @include tablet{
+    display: none;
+  }
+}
+
+
+$img: Layer_5, Layer_8, Layer_7, cloud_2, Layer_6, Layer_4, cloud_1, Layer_2, Layer_1, cloud_0;
+
+@each $layer in  $img {
+  .parallax__layer-#{$layer}{
+    background: url('/assets/img/backgrounds/parallax/#{$layer}.png') no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    width: 120%;
+    left: -10%;
+    bottom: -5%;
+  }
+}
+.parallax__layer-Layer_5{
+  bottom: 0;
+}
+.parallax__layer-cloud_0{
+  height: 365px;
+  width: 915px;
+  left: 9%;
+  bottom: 5%;
+}
+.parallax__layer-Layer_1{
+  height: 75%;
+}
+.parallax__layer-Layer_2{
+  height: 45%;
+}
+.parallax__layer-cloud_1{
+  bottom: 55%;
+  left: 24%;
+  width: 400px;
+  height: 210px;
+}
+.parallax__layer-Layer_8{
+  height: 84%;
+}
+.parallax__layer-Layer_7{
+  height: 78%;
+}
+.parallax__layer-cloud_2{
+  width: 300px;
+  height: 160px;
+  bottom: 66%;
+  left: 69%;
+}
+.parallax__layer-Layer_6{
+  height: 85%;
+}
+.parallax__layer-Layer_4{
+  height: 75%;
+}

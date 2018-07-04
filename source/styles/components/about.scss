@@ -1,14 +1,12 @@
 .about{
-  @extend %clearfix;
   position: relative;
+  display: flex;
+  @include laptop{
+    flex-direction: column;
+  }
 }
 .about__left, .about__right{
-  width: 50%;
-  float: left;
-  @include laptop{
-    width: 100%;
-    float: none;
-  }
+  flex: 1;
 }
 .about__left{
   background: $white;

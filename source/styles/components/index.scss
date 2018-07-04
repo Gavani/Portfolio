@@ -4,14 +4,18 @@ $wrap-width : 380px;
   width: 100vw;
   height: 100vh;
   position: relative;
-  background: url('/assets/img/backgrounds/mountains-index.jpg') no-repeat top;
-  background-size: cover;
+  overflow: hidden;
+  @include tablet{
+    background: url('/assets/img/backgrounds/mountains-index.jpg') no-repeat top;
+    background-size: cover;
+  }
 }
 .welcome__wrapper{
   width: 100%;
   height: 100%;
   text-align: center;
   min-width: 26.67777rem;
+  position: relative;
   
   &:after{
     content: "";

@@ -4,8 +4,6 @@ $wrap-width: 380px;
   width: 100vw;
   height: 100vh;
   position: relative;
-  background: url('/assets/img/backgrounds/mountains-index.jpg') no-repeat top;
-  background-size: cover;
   text-align: center;
   min-width: 26.67777rem;
 
@@ -15,6 +13,10 @@ $wrap-width: 380px;
     height: 100%;
     width: 0;
   }
+  @include tablet{
+    background: url('/assets/img/backgrounds/mountains-index.jpg') no-repeat top;
+    background-size: cover;
+  }
 }
 .auth__wrapper{
   @include inlineblock(middle);
@@ -23,6 +25,7 @@ $wrap-width: 380px;
   padding-top: 30px;
   width: $wrap-width;
   overflow: hidden;
+  position: relative;
 
   .subtitle{
     margin-bottom: 30px;
