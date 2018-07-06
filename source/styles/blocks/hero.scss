@@ -21,7 +21,7 @@
 .hero__bg{
   width: 100vw;
   height: 100vh;
-
+  position: absolute;
   &:after{
     content: "";
     display: block;
@@ -36,13 +36,13 @@
     height: 600px;
   }
   @include phone{
-    height: 400px;
+    height: 500px;
     background: url('/assets/img/backgrounds/mountains-index.jpg') no-repeat;
     background-size: cover;
   }
 }
 .hero__bg-img{
-  width: 100%;
+  width: 130%;
   height: 100%;
   @include phone{
     display: none;
@@ -80,8 +80,11 @@
 .hero__title{
   @include centered(y);
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hero__user-block{
-  @include centered;
+  position: absolute;
 }
 
